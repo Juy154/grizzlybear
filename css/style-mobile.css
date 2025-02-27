@@ -1,0 +1,180 @@
+
+@media screen and (max-width: 840px) {
+    
+    #wrapper {
+        width: 320px;
+        min-height: 480px;
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 5fr 10fr 0.25fr;
+
+        row-gap: 30px;
+        column-gap: 0px;
+        justify-content: center;
+    }
+
+
+    header {
+        grid-column: span 5;
+    }
+
+    .nav-box-passive,
+    .nav-box-active{
+        width: 64px;
+        padding-bottom: 20px;
+    }
+
+    .nav-icon-logo,
+    .nav-icon-steckbrief,
+    .nav-icon-nahrung,
+    .nav-icon-lebensraum,
+    .nav-icon-verhalten {
+        scale: 80%;
+    }
+
+
+    .nav-box-permanent {
+        display: none;
+    }
+    
+    .nav-title-passive,
+    .nav-title-active {
+        display: none;
+    }
+
+  
+    main {
+        grid-column: span 5;
+        grid-row: span 1;
+        margin: 0;
+    }
+
+    .aufmacher-1,
+    .aufmacher-2,
+    .aufmacher-3,
+    .aufmacher-4{
+        height: 240px;
+        background-size: 430px;
+        background-position: -35px;
+        margin: 0px;
+    }
+
+
+
+    .mobile-h1 {
+        display: block;
+        font-size: 16pt;
+        color: #906C57;
+
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+
+    .button-box {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    aside {
+        grid-column: span 5;
+        grid-row: span 1;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h1 {
+        width: auto;
+        font-size: 18pt;
+        margin: 0px 0px 15px 10px;
+    }
+
+    h2 {
+        margin: 40px 20px 10px 10px;
+    }
+
+    .text-aufmacher {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 5px 0px 10px;
+    }
+
+    .text {
+        font-size: 14pt;
+        padding: 0px 20px 0px 10px;
+        margin-bottom: 0px;
+    }
+
+    ul {
+        padding: 0px 20px 0px 30px;
+    }
+
+
+    .bild-1-1,
+    .bild-1-2,
+    .bild-2-1,
+    .bild-2-2,
+    .bild-3-1,
+    .bild-3-2,
+    .bild-4-1,
+    .bild-4-2 {
+        width: 320px;
+        margin: 0px 0px 0px 0px;
+        align-content: center;
+
+    }
+
+
+
+    footer{
+        grid-column: span 5;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+
+        gap: 20px;
+        padding: 15px 5px 10px 5px;
+        margin-top: 50px;
+    }
+
+    .icon-mutter {
+        margin: 0px 0px 0px 10px;
+    }
+
+    .ul-footer {
+        width: 100px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5px;
+        
+        margin: 0px 0px 0px 10px;
+        padding: 0px;
+        float: none;
+    }
+
+   
+
+    .mobile-sprache {
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        margin: 0px 0px 0px 20px;
+    }
+   
+    .mobile-icon-sprache {
+        width: 50px;
+        height: 50px;
+    
+        background-image: url(/grizzlypower/icon_active/icon_active_german.png);
+        background-size: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+
+}

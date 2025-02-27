@@ -1,0 +1,387 @@
+#wrapper {
+    grid-template-rows: 0.75fr 3fr 0.5fr;
+}
+
+
+.nav-icon-logo {  
+    background-image: url(/grizzlypower/icon_active/icon_active_logo.png);
+}
+.nav-icon-koerper { 
+    background-image: url(/grizzlypower/icon_passive/icon_passive_koerper.png);
+}
+
+.nav-link:hover {
+    .nav-icon-koerper{
+        background-image: url(/grizzlypower/icon_active/icon_active_koerper.png);
+    }
+}    
+
+.mobile-nav-title {
+    display: none;
+}
+
+.aufmacher {
+    width: auto;
+    height: 300px;
+    border-radius: 3px;
+
+    background-color: black;
+    background-size: 535px ;
+    background-image: url('/grizzlypower/pic/grizzly_platschen.png');
+    background-repeat: no-repeat; 
+}
+
+h1 {
+    margin: 30px 0px 0px 10px;    
+}
+
+.text-aufmacher {
+    padding: 10px 0px 10px 0px;
+    margin-top: 5px;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+.button-box {
+    background-color: #6A4732;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+
+    text-align: center;
+    margin-left: 10px;
+   
+    color: white;
+    font-size: 15pt;
+    padding-top: 5px; 
+}
+
+.button-link:hover{
+    .button-box{
+        background-color: white;
+        color: #6A4732;
+
+        border-color: #6A4732;
+        border-style: solid;
+        border-width: 1px;
+    }
+}
+
+
+aside {
+    grid-row: span 1;
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    align-content: flex-start;
+    justify-content: right;
+   
+    gap: 15px;
+}
+
+.category-tile {
+    background-color: #906C57;
+    width: 225px;
+    height: 230px;
+    border-radius: 6px;
+
+}
+.category-tile-title {
+    color: white;
+    font-size: 11pt;
+    font-weight: 500;
+    line-height: 14pt;
+
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.grizzly_gesicht {
+    height: 170px;
+    border-radius: 6px 6px 0px 0px;
+
+
+    background-color: black;
+    background-image: url(/grizzlypower/pic/grizzly_gesicht.jpg);
+    background-size: 300px;
+    background-position: -20px;
+    background-repeat: no-repeat;
+}
+.grizzly_laufen {
+    height: 170px;
+    border-radius: 6px 6px 0px 0px;
+
+
+    background-color: black;
+    background-image: url(/grizzlypower/pic/grizzly_laufen.png);
+    background-size: 350px;
+    background-position: -80px -20px;
+    background-repeat: no-repeat;
+}
+.grizzly_essen {
+    height: 170px;
+    border-radius: 6px 6px 0px 0px;
+
+
+    background-color: black;
+    background-image: url(/grizzlypower/pic/grizzly_essen.jpg);
+    background-size: 350px;
+    background-position: -10px 0px;
+    background-repeat: no-repeat;
+}
+.grizzly_kaempfen {
+    height: 170px;
+    border-radius: 6px 6px 0px 0px;
+
+    background-color: black;
+    background-image: url(/grizzlypower/pic/grizzly_kaempfen.jpg);
+    background-size: 270px;
+    background-position: -20px 0px;
+    background-repeat: no-repeat;
+}
+
+.tile-link {
+    text-decoration: none;
+}
+.tile-link:hover {
+    .category-tile {
+        background-color: #6A4732;
+    }
+}
+
+
+footer {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    main {
+        grid-column: span 8;
+    }
+    .aufmacher {
+        height: 470px;
+        border-radius: 6px;
+        
+        background-size: 840px ;
+        background-position: -250px 0px;
+    }
+
+    h1 {
+        font-size: 16pt;
+    }
+
+    .text-aufmacher {
+        font-size: 14pt;
+    }
+
+    .button-box {
+        width: 210px;
+        height: 50px;
+        border-radius: 15px;
+
+        font-size: 16pt;
+        padding-top: 10px;
+    }
+
+    aside {
+        grid-column: span 4;
+        margin-right: 10px;
+        
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: end;
+       
+        gap: 5px;
+    }
+
+
+    .category-tile {
+        width: 180px;
+        height: 185px;
+        margin-top: 5px;
+    }
+
+    .category-tile-title {
+        font-size: 12pt;
+        line-height: 15pt;
+        margin: 5px 0px 0px 0px;
+        
+    }
+
+    .grizzly_gesicht {
+        width: 180px;
+        height: 130px;
+
+        background-size: 200px;
+        background-position: 0px;
+    }
+    .grizzly_laufen {
+        width: 180px;
+        height: 130px;
+
+        background-size: 250px;
+        background-position: -50px -20px;
+    }
+    .grizzly_essen {
+        width: 180px;
+        height: 130px;
+
+        background-size: 300px;
+        background-position: 0px -10px;
+    }
+    .grizzly_kaempfen {
+        width: 180px;
+        height: 130px;
+
+        background-size: 200px;
+        background-position: -10px 0px;
+    }
+
+    .li-footer a {
+        font-size: 10pt;
+    }
+
+    .mobile-link {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+
+    #wrapper {
+        grid-template-rows: 0.5fr 10fr 10fr 1fr;
+        column-gap: 0px;
+    }   
+
+    .aufmacher{
+        height: 240px;
+       
+        background-size: 430px;
+        background-position: -110px 0px;
+    }
+
+    .mobile-nav-title {
+        
+        display: block;
+        color: #6A4732;
+        font-size: 18pt;
+
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 16pt;
+    }
+
+    .text-aufmacher {
+       font-size: 14pt;
+       padding-left: 10px;
+    }
+
+    .button-box {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    aside {
+        grid-column: span 5;
+        grid-row: span 1;
+        margin: 0px;
+    
+        align-items: center;
+   
+        gap: 10px;
+    }
+
+    .category-tile {
+        width: 300px;
+        height: 300px;
+    }
+    .category-tile-title {
+        font-size: 15pt;
+        line-height: 20pt;
+        float: left;
+        margin: 10px 5px 0px 5px;
+
+    }
+
+    .grizzly_gesicht,
+    .grizzly_essen,
+    .grizzly_kaempfen,
+    .grizzly_laufen {
+        width: 300px;
+        height: 220px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .grizzly_gesicht{
+        background-size: 320px;
+        background-position: 0px;
+    }
+    .grizzly_laufen{
+        background-size: 430px;
+        background-position: -100px;
+    }
+    .grizzly_essen{
+        background-size: 470px;
+        background-position: 0px;
+    }
+
+    .grizzly_kaempfen{
+        background-size: 330px;
+        background-position: -20px;
+    }
+
+
+    footer{
+        grid-column: span 5;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+
+        gap: 20px;
+        padding: 15px 5px 10px 5px;
+    }
+
+    .icon-mutter {
+        margin: 0px 0px 0px 10px;
+    }
+
+    .ul-footer {
+        width: 100px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5px;
+        
+        margin: 0px 0px 0px 10px;
+        padding: 0px;
+        float: none;
+    }
+
+    .mobile-sprache {
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        margin: 0px 0px 0px 20px;
+    }
+   
+    .mobile-icon-sprache {
+        width: 50px;
+        height: 50px;
+    
+        background-image: url(/grizzlypower/icon_active/icon_active_german.png);
+        background-size: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
