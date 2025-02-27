@@ -4,15 +4,15 @@
 
 
 .nav-icon-logo {  
-    background-image: url(/grizzlypower/icon_active/icon_active_logo.png);
+    background-image: url(/icon_active/icon_active_logo.png);
 }
 .nav-icon-koerper { 
-    background-image: url(/grizzlypower/icon_passive/icon_passive_koerper.png);
+    background-image: url(/icon_passive/icon_passive_koerper.png);
 }
 
 .nav-link:hover {
     .nav-icon-koerper{
-        background-image: url(/grizzlypower/icon_active/icon_active_koerper.png);
+        background-image: url(/icon_active/icon_active_koerper.png);
     }
 }    
 
@@ -27,7 +27,7 @@
 
     background-color: black;
     background-size: 535px ;
-    background-image: url('/grizzlypower/pic/grizzly_platschen.png');
+    background-image: url('/pic/grizzly_platschen.png');
     background-repeat: no-repeat; 
 }
 
@@ -105,7 +105,7 @@ aside {
 
 
     background-color: black;
-    background-image: url(/grizzlypower/pic/grizzly_gesicht.jpg);
+    background-image: url(/pic/grizzly_gesicht.jpg);
     background-size: 300px;
     background-position: -20px;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ aside {
 
 
     background-color: black;
-    background-image: url(/grizzlypower/pic/grizzly_laufen.png);
+    background-image: url(/pic/grizzly_laufen.png);
     background-size: 350px;
     background-position: -80px -20px;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ aside {
 
 
     background-color: black;
-    background-image: url(/grizzlypower/pic/grizzly_essen.jpg);
+    background-image: url(/pic/grizzly_essen.jpg);
     background-size: 350px;
     background-position: -10px 0px;
     background-repeat: no-repeat;
@@ -137,7 +137,7 @@ aside {
     border-radius: 6px 6px 0px 0px;
 
     background-color: black;
-    background-image: url(/grizzlypower/pic/grizzly_kaempfen.jpg);
+    background-image: url(/pic/grizzly_kaempfen.jpg);
     background-size: 270px;
     background-position: -20px 0px;
     background-repeat: no-repeat;
@@ -378,7 +378,7 @@ footer {
         width: 50px;
         height: 50px;
     
-        background-image: url(/grizzlypower/icon_active/icon_active_german.png);
+        background-image: url(/icon_active/icon_active_german.png);
         background-size: 50px;
         background-position: center;
         background-repeat: no-repeat;
