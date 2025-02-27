@@ -1,9 +1,9 @@
 @font-face {
     font-family: Mali-Medium;
-    src: url(/type/Mali-Medium.ttf);
+    src: url(../type/Mali-Medium.ttf);
 
     font-family: Mali-Bold;
-    src: url(/type/Mali-Bold.ttf);
+    src: url(../type/Mali-Bold.ttf);
 }
 
 *{
