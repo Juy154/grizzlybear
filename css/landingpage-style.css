@@ -27,7 +27,7 @@
 
     background-color: black;
     background-size: 535px ;
-    background-image: url('pic/grizzly-platschen.png');
+    background-image: url('./pic/grizzly-platschen.png');
     background-repeat: no-repeat; 
 }
 
