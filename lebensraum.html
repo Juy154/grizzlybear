@@ -14,6 +14,7 @@
             background-position: -100px;
             background-image: url(../pic/grizzly_laufen.png);
         }
+        <!--
         .nav-icon-logo{
             background-image: url(../icon_passive/icon_passive_logo.png);
         }
@@ -33,10 +34,94 @@
             .nav-icon-lebensraum{
                 background-image: url(../icon_active/icon_active_lebensraum.png);
             }
-        }    
+        } -->
+
+        /* Stile für den passiven Zustand */
+.nav-link .nav-box-passive .nav-icon-logo {
+    background-image: url(../icon_passive/icon_passive_logo.png);
+}
+
+.nav-link .nav-box-passive .nav-icon-koerper {
+    background-image: url(../icon_passive/icon_passive_koerper.png);
+}
+
+.nav-link .nav-box-passive .nav-icon-lebensraum {
+    background-image: url(../icon_passive/icon_passive_lebensraum.png);
+}
+
+.nav-link .nav-box-passive .nav-icon-nahrung {
+    background-image: url(../icon_passive/icon_passive_nahrung.png);
+}
+
+.nav-link .nav-box-passive .nav-icon-verhalten {
+    background-image: url(../icon_passive/icon_passive_verhalten.png);
+}
+
+/* Stile für den aktiven Zustand */
+.nav-link .nav-box-active .nav-icon-logo {
+    background-image: url(../icon_active/icon_active_logo.png);
+}
+
+.nav-link .nav-box-active .nav-icon-koerper {
+    background-image: url(../icon_active/icon_active_koerper.png);
+}
+
+.nav-link .nav-box-active .nav-icon-lebensraum {
+    background-image: url(../icon_active/icon_active_lebensraum.png);
+}
+
+.nav-link .nav-box-active .nav-icon-nahrung {
+    background-image: url(../icon_active/icon_active_nahrung.png);
+}
+
+.nav-link .nav-box-active .nav-icon-verhalten {
+    background-image: url(../icon_active/icon_active_verhalten.png);
+}
+
+/* Passive Darstellung */
+.nav-link .passive .nav-icon-logo {
+    background-image: url(../icon_passive/icon_passive_logo.png);
+}
+
+.nav-link .passive .nav-icon-koerper {
+    background-image: url(../icon_passive/icon_passive_koerper.png);
+}
+
+.nav-link .passive .nav-icon-lebensraum {
+    background-image: url(../icon_passive/icon_passive_lebensraum.png);
+}
+
+.nav-link .passive .nav-icon-nahrung {
+    background-image: url(../icon_passive/icon_passive_nahrung.png);
+}
+
+.nav-link .passive .nav-icon-verhalten {
+    background-image: url(../icon_passive/icon_passive_verhalten.png);
+}
+
     </style>
 
 </head>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('.nav-link'); // Alle Links abrufen
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                // Entferne die "active" Klasse von allen Links
+                navLinks.forEach(l => {
+                    l.querySelector('.nav-box-passive')?.classList.remove('active');
+                    l.querySelector('.nav-box-active')?.classList.add('passive');
+                });
+
+                // Füge die "active" Klasse nur dem angeklickten Link hinzu
+                this.querySelector('.nav-box-passive')?.classList.add('active');
+                this.querySelector('.nav-box-active')?.classList.remove('passive');
+            });
+        });
+    });
+</script>
 
 
 <body>
