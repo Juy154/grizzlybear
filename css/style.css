@@ -1,14 +1,14 @@
 @font-face {
-    font-family: Mali-Medium;
-    src: url(../type/Mali-Medium.ttf);
+    font-family: mali_medium;
+    src: url(../type/mali_medium.ttf);
 
-    font-family: Mali-Bold;
-    src: url(../type/Mali-Bold.ttf);
+    font-family: mali_bold;
+    src: url(../type/mali_bold.ttf);
 }
 
 *{
     box-sizing: border-box;
-    font-family: Mali-Medium;
+    font-family: mali_medium;
     line-height: 17pt;
 }
 
@@ -144,7 +144,7 @@ header {
     color: white;
     text-decoration: none;
 
-    font-family: Mali-Bold;
+    font-family: mali_bold;
     font-size: 12pt;
 }
 .nav-title-passive {
@@ -152,7 +152,7 @@ header {
     text-decoration: none;
 
     
-    font-family: Mali-Bold;
+    font-family: mali_bold;
     font-size: 12pt;
 }
 
@@ -231,7 +231,7 @@ aside {
 }
 
 h1 {
-    font-family: Mali-Bold;
+    font-family: mali_bold;
     color: #6A4732;
     font-size: 16pt;
     margin-top: 5px;
@@ -245,7 +245,7 @@ h1 {
 }
 
 h2 {
-    font-family: Mali-Bold;
+    font-family: mali_bold;
     font-size: 13pt;  
     margin: 0px 0px 20px 30px;
     font-weight: 600; 
